@@ -1,0 +1,48 @@
+
+<ion-content class="login-content">
+
+    <div class="list boxS" ng-show="okShow">
+        <div class="line_style"></div>
+
+
+        <label class="item_style item-input item-floating-label">
+            <span class="input-label">注册邮箱</span>
+            <input type="text" placeholder="请输入注册邮箱" name="email" ng-model="email" value={{email}}>
+        </label>
+        <label class="item_style item-input item-floating-label">
+            <span class="input-label">密码</span>
+            <input type="password" placeholder="请输入密码" name="upwd" ng-model="uPwd" value={{uPwd}}>
+        </label>
+        <label class="item_style item-input item-floating-label">
+            <span class="input-label">确认密码</span>
+            <input type="password" placeholder="请再次输入密码" name="urpwd" ng-model="uRpwd" value={{uRpwd}}>
+        </label>
+
+        <div class="item font-style1" ng-if=errorShow>
+            {{errorMsg}}
+        </div>
+
+        <div class="btn_login text-center" ng-click="register()">
+            <img src="images/btn-register-big.png">
+        </div>
+
+
+
+    </div>
+    <div class="list list-inset register_succ" id="reg_succ">
+
+       <div class="text-center font-style2">
+        <h1>注册成功!</h1>
+           3秒后返回
+       </div>
+
+    </div>
+
+
+</ion-content>
+
+<div class="login_bg">
+
+    <img src="images/login-bg.png" width="100%">
+
+</div>

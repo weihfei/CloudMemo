@@ -1,0 +1,203 @@
+.app_logo{
+
+    margin: 0 auto;
+    transform: translate(0,80%);
+}
+
+.boxS{
+
+    -webkit-box-shadow: 0px 0px 10px #D6D6D6;
+    -moz-box-shadow: 0px 0px 10px #D6D6D6;
+    box-shadow: 0px 0px 10px #D6D6D6;
+    margin:0px auto 0;
+    width: 80%;
+    transform: translate(0%,20%);
+    border-radius: 10px;
+
+}
+.login-content{
+    height: 100%;
+    overflow: hidden;
+}
+
+.line_style{
+
+    background-color: #8FD1FF;
+    height: 3px;
+    border-radius: 10px;
+    width: 98%;
+    margin:0 auto;
+
+}
+
+.item_style{
+
+    border-bottom: 1px solid #e4e5e7;
+}
+
+.btn_login{
+
+    margin: 50px auto 0;
+
+}
+
+.btn_register{
+
+    margin: 20px auto 50px;
+
+}
+.login_bg{
+position: fixed;
+    bottom:-5px;
+    z-index: -1;
+
+}
+
+.font-style1{
+
+    font-size: 1em;
+    color: #ff8e8b;
+}
+
+.font-style2 h1{
+    font-size: 1.4em;
+    color: #4d4d4d;
+}
+
+.register_succ{
+    position: absolute;
+    top:200px;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 1s linear;
+    opacity:0;
+    height: 0;
+}
+
+.header_style{
+
+     background-color: #F3F3F3;
+     color: #D2D2D2;
+ }
+
+.header_style h2{
+
+    color: #D2D2D2;
+}
+
+.div_flex{
+
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+
+}
+
+.footer_style{
+
+    background-color: #A6D2FF;
+
+}
+
+.footer_style div{
+
+    text-align: center;
+
+}
+
+.content_list{
+    height: 58px;
+    line-height: 58px;
+    overflow:hidden;
+    margin:0 0 5px 0;
+    padding: 0 10px;
+    display: block;
+    transition: all 0.5s linear;
+
+}
+
+.delete_list{
+    height: 58px;
+    line-height: 58px;
+    overflow:hidden;
+    margin:0 0 5px 0;
+    padding: 0 10px;
+    display: block;
+    transition: all 0.5s linear;
+    background-color: #f86782;
+    color: #ffffff;
+
+}
+
+
+.date_style{
+    float: right;
+    line-height: 58px;
+
+
+}
+.content_style{
+
+    width: 98%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 180px;
+    padding: 10px;
+    overflow: auto;
+
+}
+
+
+
+.msg_content{
+
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 25px;
+
+}
+
+
+.textarea_style{
+
+    height: 200px;
+}
+
+.memo_button{
+
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.addMemo_style{
+    opacity: 1;
+    display: block;
+    transition: all 0.5s linear;
+
+}
+
+.alertShow{
+
+    position: absolute;
+    top:-10rem;
+    left:50%;
+    transform: translate(-50%,0);
+    transition: all 1s ease-out;
+
+}
+
+.alert_font_style1{
+
+    font-size: 1.2em;
+    color: #A9C2E9;
+    text-align: center;
+    margin: 20px auto 0;
+
+}
+
+

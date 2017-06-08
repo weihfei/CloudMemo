@@ -1,0 +1,38 @@
+
+<ion-content class="login-content">
+
+    <div class="list boxS">
+     <div class="line_style"></div>
+
+
+        <label class="item_style item-input item-floating-label">
+            <span class="input-label">用户名</span>
+            <input type="text" placeholder="请输入用户名" name="uname" ng-model="uName" value={{uName}}>
+        </label>
+        <label class="item_style item-input item-floating-label">
+            <span class="input-label">密码</span>
+            <input type="password" placeholder="请输入密码" name="upwd" ng-model="uPwd" value={{uPwd}}>
+        </label>
+
+        <div class="item font-style1" ng-hide="errorShow">
+            {{errorMsg}}
+        </div>
+
+        <div class="btn_login text-center" ng-click="uLogin()">
+          <img src="images/btn-login.png">
+        </div>
+
+        <div class="btn_register text-center">
+            <a  ui-sref="register"><img src="images/btn-register.png"></a>
+        </div>
+
+
+    </div>
+
+</ion-content>
+
+<div class="login_bg">
+
+    <img src="images/login-bg.png" width="100%">
+
+</div>

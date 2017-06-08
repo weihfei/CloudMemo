@@ -1,0 +1,46 @@
+<ion-header-bar class="header_style">
+    <h2 class="title">CloudMemo</h2>
+
+</ion-header-bar>
+
+<ion-content>
+
+    <div class="list addMemo_style">
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">标题</span>
+            <input type="text" placeholder="请输入标题" ng-model="memoTitle" value={{memoTitle}}>
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">内容</span>
+            <textarea placeholder="请输入内容" class="textarea_style" ng-model="memoContent" value={{memoContent}}></textarea>
+        </label>
+
+        <div class="item font-style1" ng-hide="errorShow">
+
+            {{errorMsg}}
+
+        </div>
+
+
+        <div class="memo_button">
+
+            <div ng-click="saveMemo()"><img src="images/btn-save.png"> </div>
+            <div ui-sref="main({uid:1})"><img src="images/btn-cancel.png"> </div>
+
+        </div>
+
+    </div>
+
+<div class="alertShow">
+
+    <img src="images/success.png">
+
+    <div class="alert_font_style1">
+       {{feedBack}}
+    </div>
+</div>
+
+</ion-content>
+
+
+<div ng-include="'footer.html'"></div>

@@ -1,0 +1,47 @@
+<ion-header-bar class="header_style">
+    <h2 class="title">CloudMemo</h2>
+
+</ion-header-bar>
+
+<ion-content>
+
+
+<div class="list list-inset" id="listMain" ng-click="contentShow()">
+
+    <a on-swipe-left="onSwipeLeft($index)" class="content_list" ng-repeat="tmp in contentList track by $index" style="background-color: {{colorList[5].bgColor}};color: {{colorList[5].ftColor}}">
+
+        <label data-index={{$index}}>
+           {{tmp.title}}
+
+        <div class="date_style">
+          {{tmp.date|date:"yyyy-MM-dd hh:mm"}}
+
+         </div>
+
+         <div class="content_style">
+
+           <p class="msg_content">
+               {{tmp.content}}
+           </p>
+
+          </div>
+        </label>
+
+
+        <div class="delete_list" data-index={{$index}}>
+            删除
+
+        </div>
+
+    </a>
+
+</div>
+
+
+
+</ion-content>
+
+
+
+
+<div ng-include="'footer.html'"></div>
